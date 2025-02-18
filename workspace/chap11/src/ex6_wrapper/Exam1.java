@@ -1,6 +1,5 @@
 package ex6_wrapper;
 
-import java.util.function.BiConsumer;
 
 /*
   str 문자열의 숫자의 합 출력하기

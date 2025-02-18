@@ -27,7 +27,7 @@ public class Test09 {
 	}
 
 	public static String filldash(String str, int len){
-		
+		// 논리연산자 : 왼쪽이 아니면 오른쪽 실행조차 x
 		if(str == null || str.length() == len){
 			return str;
 		}
@@ -39,13 +39,13 @@ public class Test09 {
 			return str.substring(0, len);
 		}
 
-		// 문자열 앞 공백 개수 만큼 - 추가가
+		// 문자열 앞 공백 개수 만큼 - 추가
 		StringBuilder sb = new StringBuilder();
 		
 		for(int i = 0; i < len - str.length(); i++){
 			sb.append("-");
 		}
-		// 기본 배열 추가가
+		// 기본 배열 추가
 		sb.append(str);
 		return sb.toString();
 	

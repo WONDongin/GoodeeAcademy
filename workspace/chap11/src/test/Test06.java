@@ -1,7 +1,5 @@
 package test;
 
-import java.util.Iterator;
-
 /*
  * s1,s2 문자열을 분리하여 다음과 같이 결과가 나오도록 코딩하기
 [결과] 
@@ -21,6 +19,8 @@ public class Test06 {
 		String[] arr1 = s1.split("-");
 		String[] arr2 = s2.split(",");
 		
+		// \\s* : 공백0개이상 => 정규식 : 문자의 특성을 기호표시
+		arr2 = s2.split("\\s*,\\s*");
 		for(int i = 0; i < arr1.length; i++) {
 			System.out.printf("%s => %s\n",  arr1[i], arr2[i].trim());
 		}
