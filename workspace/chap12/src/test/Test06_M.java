@@ -92,6 +92,7 @@ public class Test06_M {
 		case 2 : 
 			System.out.println("저자을 입력하세요.");
 			String author = scan.nextLine();
+			// filter 메서드
 			books.values().stream()
             .filter(book -> book.author.equals(author))
             .forEach(book -> System.out.println("조회 정보 : " + book + " 입니다."));

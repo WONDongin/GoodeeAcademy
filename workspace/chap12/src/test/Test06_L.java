@@ -96,6 +96,7 @@ public class Test06_L {
     }
 
     public static void viewBooks() {
+    	// List 객체에 요소가 없는 경우
         if (books.isEmpty()) {
             System.out.println("등록된 도서가 없습니다.");
             return;
